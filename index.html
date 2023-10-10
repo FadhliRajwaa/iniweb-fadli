@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Profile</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <style>
+    /* CSS untuk efek hover */
+    .nav-link:hover {
+      background-color: crimson;
+      border-radius: 10px;
+      text-decoration: underline;
+      text-decoration-color: burlywood;
+      text-underline-offset: 7px;
+      /* Agar Menu nya bergulir cui*/
+    }
+
+    .navbar-toggler {
+      color: wheat;
+      background-color: royalblue;
+    }
+
+    .card-img-top {
+      width: 200px;
+      margin-top: 10px;
+      margin-left: 400px;
+    }
+
+    .card {
+      background-color: gainsboro;
+    }
+
+    .card:hover {
+      background-color: rgb(210, 30, 30);
+
+    }
+
+    .button-1 {
+      background-color: rgba(37, 243, 106, 0.87);
+      color: rgb(255, 255, 255);
+      border-color: rgb(0, 0, 0);
+      margin-left: 150px;
+      font-family: cursive;
+      font-weight: 600;
+      border-radius: 15px;
+      margin-left: 380px;
+      width: 200px;
+      height: 50px;
+    }
+
+    .button-1:hover {
+      background-color: firebrick;
+    }
+
+    .ini-data {
+      text-align: center;
+      margin-right: 30px;
+    }
+
+    .khusus-mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    .biodata {
+      text-align: center;
+      padding: 20px;
+
+    }
+
+    .biodata:hover {
+      background-color: rgb(49, 115, 238);
+    }
+
+    .red-text {
+      font-weight: 700;
+      color: red;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      background-color: rgba(214, 214, 214, 0.288);
+    }
+
+    .form-group .form-label {
+      flex: 0 0 100px;
+      /* Atur lebar label sesuai kebutuhan */
+      margin-right: 10px;
+    }
+
+    .form-group .form-control {
+      flex: 1;
+
+    }
+
+
+    .btn:hover {
+      background-color: rgb(255, 238, 0);
+      color: black;
+    }
+
+    @media screen and (max-width: 768px) {
+      /* CSS untuk layar kecil di sini */
+
+      .navbar-toggler {
+        background-color: rgb(65, 225, 78);
+      }
+
+      .card-img-top {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+
+      .card {
+        background-color: gainsboro;
+        margin: 20px;
+
+      }
+
+      .button-1 {
+        margin-left: 70px;
+        margin-right: auto;
+        width: 150px;
+        height: 50px;
+      }
+
+      .ini-data {
+        text-align: center;
+        margin-right: 20px;
+      }
+
+      .khusus-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+      }
+
+
+    }
+  </style>
+
+</head>
+
+<body id="theme">
+
+  <!-- Navbar -->
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
+      <div class="container-fluid justify-content-center p-2">
+        <!-- Icon Humberger Mobile Untuk Navbar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Icon End -->
+
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse justify-content-center fs-5 fw-bold" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light mx-3" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-3" href="#">Alamat Tetap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-3" href="#">Orang Tua</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-3" href="#">Asal Sekolah</a>
+            </li>
+          </ul>
+          <div class="form-check form-switch">
+            <input class="form-check-input ms-3" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+            <label class="form-check-label text-light ms-4 fw-bold" for="flexSwitchCheckDefault">Dark Mode</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Data Mahasiswa -->
+  <div class="ini-data">
+    <p class="fw-bold fs-3 m-4 ms-5">Data Mahasiswa</p>
+  </div>
+  <div class="khusus-mobile">
+
+    <div class="card border-dark w-75 m-4 ms-5 rounded-4">
+      <img src="Foto-1.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+
+        <table class="table mx-auto p-2 mt-5 w-100">
+          <thead>
+
+            <tr class="border-4">
+              <th scope="col">NPM</th>
+              <td>: 22.01.53.0045</td>
+            </tr>
+
+            <tr class="border-4">
+              <th scope="col">Nama</th>
+              <td>: Fadhli Rajwaa Rahmana</td>
+            </tr>
+
+            <tr class="border-4">
+
+              <th scope="col">Program</th>
+              <td>: Reguler / Kelas Pagi</td>
+            </tr>
+
+            <tr class="border-4">
+              <th scope="col">Program Studi</th>
+              <td>: Teknik Informatika</td>
+            </tr>
+
+          </thead>
+        </table>
+        <button type="button" class="button-1" id="scroll-button">Scroll Down</button>
+      </div>
+    </div>
+  </div>
+  <!-- Data Mahasiswa End -->
+
+  <!-- Pengisian Biodata -->
+  <hr width="100%" size="3" color="black">
+  <div class="biodata">
+    <p class="fw-bold fs-5 "><span class="fw-bold fs-5">Silahkan lengkapi semua isian data diri.</span> Pastikan data
+      sesuai dengan KTP/Ijazah atau identitas resmi lain.</p>
+    <p><span class="red-text">Data ini akan dilaporkan ke Direktorat jendral perguruan tinggi Republik Indonesia.
+        Kesalahan pengisian data bukan tanggung jawab lembaga.</span></p>
+  </div>
+  <hr width="100%" size="3" color="black">
+
+  <!-- Pengisian Biodata End -->
+
+  <!-- Form -->
+  <form action="proses_data.php" method="post" enctype="multipart/form-data">
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-1" class="form-label">Nama</label>
+      <input type="text" class="form-control" id="input-1" placeholder="Nama Lengkap Anda" required>
+    </div>
+
+    <div class="form-group mb-3 w-75" id="form">
+      <label for="input-2" class="form-label">Tempat Lahir</label>
+      <input type="text" class="form-control" id="input-2" placeholder="Tempat Lahir Anda" required>
+    </div>
+
+    <div class="form-group mb-3 w-75" id="form">
+      <label for="radio-box2" class="form-label">Warga Negara</label>
+      <input class="form-check-input" type="radio" name="radio-box" id="radio-box2" checked>
+      <label class="form-check-label" for="radio-box2">Warga Negara Indonesia</label>
+      <br>
+      <input class="form-check-input" type="radio" name="radio-box" id="radio-box3" checked>
+      <label class="form-check-label" for="radio-box3">Warga Negara Asing</label>
+
+      <select class="form-select" aria-label="Pilih Negara Anda" required>
+        <option selected>Pilih Negara Anda</option>
+        <option value="1">Indonesia</option>
+        <option value="2">India</option>
+        <option value="3">Arab</option>
+        <option value="4">England</option>
+      </select>
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-4" class="form-label">Nama Ibu</label>
+      <input type="text" class="form-control" id="input-4" placeholder="Nama Ibu Anda">
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-5" class="form-label">Nama Ayah</label>
+      <input type="text" class="form-control" id="input-5" placeholder="Nama Ayah Anda">
+    </div>
+
+    <div class="form-group mb-4 w-100" id="form">
+      <label for="input-6" class="form-label">No KTP Mahasiswa</label>
+      <input type="text" class="form-control" id="input-6" placeholder="Nomer KTP Anda" required>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <br>
+      <label for="input-7" class="form-label">NISN</label>
+      <input type="text" class="form-control" id="input-7" placeholder="NISN Anda" required>
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-8" class="form-label">Jenis Kelamin</label>
+      <select class="form-select" id="input-8" aria-label="Jenis Kelamin Anda" required>
+        <option selected></option>
+        <option value="1">Laki-Laki</option>
+        <option value="2">Wanita</option>
+      </select>
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-9" class="form-label">Agama</label>
+      <select class="form-select" id="input-9" aria-label="Agama Anda" required>
+        <option selected></option>
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Buddha">Buddha</option>
+        <option value="Konghucu">Konghucu</option>
+      </select>
+      &nbsp; &nbsp;
+      <label for="input-10" class="form-label">Gol.Darah</label>
+      <select class="form-select" id="input-10" aria-label="Golongan Darah" required>
+        <option selected></option>
+        <option value="1">AB</option>
+        <option value="2">A</option>
+        <option value="3">B</option>
+        <option value="4">O</option>
+      </select>
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-11" class="form-label">Status Sipil</label>
+      <select class="form-select" id="input-11" aria-label="Status Sipil" required>
+        <option selected></option>
+        <option value="1">Menikah</option>
+        <option value="2">Belum Menikah</option>
+      </select>
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-12" class="form-label">Alamat</label>
+      <input type="text" class="form-control" id="input-12" placeholder="Alamat Lengkap Anda" required>
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-13" class="form-label">RT</label>
+      <input type="text" class="form-control" id="input-13" placeholder="RT Alamat Rumah" required>
+      <label for="input-14" class="form-label">RW</label>
+      <input type="text" class="form-control" id="input-15" placeholder="RW Alamat Rumah" required>
+    </div>
+
+    <div class="form-group mb-4 w-100" id="form">
+      <label for="input-15" class="form-label">Kota/Kabupaten</label>
+      <input type="text" class="form-control" id="input-15" placeholder="Kota/Kabupaten" required>
+      &nbsp; &nbsp; &nbsp;
+      <label for="input-16" class="form-label">Kode Pos</label>
+      <input type="text" class="form-control" id="input-16" placeholder="Kode Pos" required>
+    </div>
+
+    <div class="form-group mb-4 w-100" id="form">
+      <label for="input-17" class="form-label">Kelurahan</label>
+      <input type="text" class="form-control" id="input-17" placeholder="Kelurahan Anda" required>
+      &nbsp; &nbsp; &nbsp;
+      <label for="input-18" class="form-label">Kecamatan</label>
+      <input type="text" class="form-control" id="input-18" placeholder="Kecamatan Anda" required>
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-19" class="form-label">No Telepon/No HP</label>
+      <input type="text" class="form-control" id="input-19" placeholder="Nomer Anda" required>
+    </div>
+
+    <div class="form-group mb-4 w-75" id="form">
+      <label for="input-20" class="form-label">Alamat Email</label>
+      <input type="text" class="form-control" id="input-20" placeholder="Email Anda" required>
+    </div>
+
+    <div class="form-group mb-4 w-100">
+      <label for="formFile" class="form-label">Foto <br>(Menggunakan Jas Almet) </label>
+      <input class="form-control" type="file" id="formFile" required>
+    </div>
+
+    <div class="form-group mb-4 w-100">
+      <label for="formFile-2" class="form-label">Foto Calon Wisudawan</label>
+      <input class="form-control" type="file" id="formFile-2">
+    </div>
+
+    <div class="form-group mb-4 w-100">
+      <label for="formFile-3" class="form-label">Scan KTP / KK</label>
+      <input class="form-control" type="file" id="formFile-3" required>
+    </div>
+
+    <div class="form-group mb-4 w-100">
+      <label for="formFile-4" class="form-label">Scan Ijazah SMA</label>
+      <input class="form-control" type="file" id="formFile-4" required>
+    </div>
+
+    <div class="form-group mb-4 w-100">
+      <label for="formFile-5" class="form-label">Scan Ijazah Akhir</label>
+      <input class="form-control" type="file" id="formFile-5">
+    </div>
+
+    <div class="form-group mb-4 w-100">
+      <label for="formFile-6" class="form-label">Scan Transkrip Akhir</label>
+      <input class="form-control" type="file" id="formFile-6">
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-primary ms-5">Submit</button>
+      <button type="reset" class="btn btn-secondary ms-5">Reset</button>
+    </div>
+  </form>
+
+
+
+
+
+
+
+
+
+  <!-- Form End -->
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    //Alert (Memberi Pemberitahuan Kepada User)
+    alert("Halo Ini Website Fadhli");
+
+    //Prompt (Inputan Untuk User)
+    const namaAnda = prompt("Masukkan Nama Anda");
+    alert(`Halo ${namaAnda} ,Selamat Belajar Dan Semangatt !!!`);
+
+    //Confirm  (Opsion Boolean True/False Atau Ya/Tidak)
+    alasanAnda = confirm("Jangan Cuman Bisa Copas Ya Minimal Donasi ke abang Fadhli hehe :v");
+    if (alasanAnda) {
+      alasanAnda = prompt("Website Ini Dibuat Menggunakan Bootstrap, Apakah Anda Mau Lanjut");
+      alert(`Jika Anda Mau Lanjut, Bisa Langsung Buka Bootstrap dan pelajari Dokumentasinya`);
+    } else {
+      alert("Jangan Males-Males Ya Kawan :) ");
+    }
+
+
+    // Fungsi untuk mengubah tema
+    function toggleDarkMode() {
+      const themeElement = document.getElementById("theme");
+
+      // Cek apakah tombol switch diaktifkan
+      if (document.getElementById("flexSwitchCheckDefault").checked) {
+        // Aktifkan dark mode
+        themeElement.classList.add("bg-dark");
+        themeElement.classList.add("text-light");
+      } else {
+        // Matikan dark mode
+        themeElement.classList.remove("bg-dark");
+        themeElement.classList.remove("text-light");
+      }
+    }
+
+    // Tangani perubahan toggle switch
+    document
+      .getElementById("flexSwitchCheckDefault")
+      .addEventListener("change", toggleDarkMode);
+
+    // Inisialisasi tema berdasarkan status toggle switch saat halaman dimuat
+    toggleDarkMode();
+
+
+    document.getElementById("scroll-button").addEventListener("click", function () {
+      const formElement = document.getElementById("form");
+      formElement.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+
+</html>
